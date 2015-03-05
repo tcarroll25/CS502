@@ -1,0 +1,17 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test1a
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+This is Release 3.60:  Test 1a
+ Time Target Action  Run New Done       State Populations 
+  653   1      SLEEP   1         WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+  889   1     WAKEUP   1         READY  : 1
+sleep time= 100, elapsed time= 467
+Hardware Statistics during the Simulation
+Context Switches =     5:  CALLS =   529:  Masks =     0
+The Z502 halts execution and Ends at Time 1122
+Exiting the program

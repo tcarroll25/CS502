@@ -1,0 +1,79 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test2b
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   1                                                                
+VPN   0                                                                
+VPN   0                                                                
+VPN   0                                                                
+VPN   5                                                                
+VMR   7                                                                
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   11                                                               
+VPN   00                                                               
+VPN   00                                                               
+VPN   00                                                               
+VPN   50                                                               
+VMR   77                                                               
+PID= 1  address= 0  written= 28   read= 28
+PID= 1  address= 80   written= 88   read= 88
+PID= 1  address= 4  written= 32   read= 32
+PID= 1  address= 80   written= 88   read= 88
+ERROR - Already locked by this thread
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   111                                                              
+VPN   000                                                              
+VPN   000                                                              
+VPN   000                                                              
+VPN   501                                                              
+VMR   777                                                              
+ERROR - Lock is not currently locked by this thread.
+PID= 1  address= 14  written= 42   read= 42
+PID= 1  address= 80   written= 88   read= 88
+PID= 1  address= 16  written= 44   read= 44
+PID= 1  address= 80   written= 88   read= 88
+ERROR - Already locked by this thread
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   11111                                                            
+VPN   00000                                                            
+VPN   00000                                                            
+VPN   00000                                                            
+VPN   50123                                                            
+VMR   77777                                                            
+ERROR - Lock is not currently locked by this thread.
+PID= 1  address= 46  written= 74   read= 74
+PID= 1  address= 80   written= 88   read= 88
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   111111                                                           
+VPN   000001                                                           
+VPN   000000                                                           
+VPN   000002                                                           
+VPN   501233                                                           
+VMR   777777                                                           
+PID= 1  address= 16368  written= 16396   read= 16396
+PID= 1  address= 80   written= 88   read= 88
+ERROR - Already locked by this thread
+This is not a valid virtual page!
+Hardware Statistics during the Simulation
+Faults =     7:  Context Switches =    22:  CALLS =   782:  Masks =     0
+The Z502 halts execution and Ends at Time 1537
+Exiting the program

@@ -1,0 +1,2288 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test2d
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+
+
+Release 3.60:Test 2d: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  643   1    SWAPPED   1      1 
+ Time Target Action  Run New Done       State Populations 
+  757   2     CREATE   1   2      READY  : 2
+ Time Target Action  Run New Done       State Populations 
+  859   3     CREATE   1   3      READY  : 2 3
+ Time Target Action  Run New Done       State Populations 
+  963   4     CREATE   1   4      READY  : 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 1069   5     CREATE   1   5      READY  : 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 1177   6     CREATE   1   6      READY  : 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 1281   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+
+
+Release 3.60:Test 2c: Pid 2
+ Time Target Action  Run New Done       State Populations 
+ 1524   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 1597   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 1966   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 2034   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+
+
+Release 3.60:Test 2c: Pid 3
+ Time Target Action  Run New Done       State Populations 
+ 2225   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 2308   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 2739   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 2807   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 2989   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 3057   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+
+
+Release 3.60:Test 2c: Pid 4
+ Time Target Action  Run New Done       State Populations 
+ 3246   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 3314   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 3813   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 3881   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 4070   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 4153   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 4324   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 4392   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+
+
+Release 3.60:Test 2c: Pid 5
+ Time Target Action  Run New Done       State Populations 
+ 4581   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 4665   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 5219   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 5287   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 5465   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 5533   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 5722   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 5790   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 5969   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 6037   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+
+
+Release 3.60:Test 2c: Pid 6
+ Time Target Action  Run New Done       State Populations 
+ 6226   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 6294   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 6823   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 6891   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 7076   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 7159   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 7328   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 7396   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 7589   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 7672   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 7840   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 7908   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 8441   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 8509   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 8687   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 8755   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 8942   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 9010   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 9192   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 9260   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 9451   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 9534   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+10051   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+10119   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+10306   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+10391   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+10560   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+10628   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+10819   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+10903   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+11073   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+11141   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+11678   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+11746   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+11932   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+12000   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+12185   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+12253   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+12433   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+12501   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+12688   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+12772   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+13288   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+13356   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+13545   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+13613   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+13795   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+13863   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+14056   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+14140   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+14310   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+14378   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 10
+ Time Target Action  Run New Done       State Populations 
+14911   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+14979   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+15159   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+15227   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 10
+ Time Target Action  Run New Done       State Populations 
+15414   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+15482   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+15662   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+15730   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 10
+ Time Target Action  Run New Done       State Populations 
+15918   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+16001   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+16518   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+16586   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+16773   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+16857   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+17027   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+17095   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+17283   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+17351   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+17535   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+17603   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+18137   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+18205   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+18387   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+18455   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+18643   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+18727   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+18897   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+18965   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+19156   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+19240   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+19756   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+19824   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+20012   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+20080   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+20258   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+20326   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+20515   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+20599   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+20769   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+20837   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+21372   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+21440   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+21619   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+21687   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+21876   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+21952   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+22130   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+22198   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+22387   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+22470   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+22987   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+23055   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+23242   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+23325   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+23496   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+23564   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+23751   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+23835   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+24005   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+24073   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+24608   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+24691   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+24862   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+24930   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+25117   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+25201   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+25371   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+25439   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+25629   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+25712   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+26229   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+26297   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+26488   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+26571   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+26742   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+26810   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+27000   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+27083   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+27250   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+27318   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+27855   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+27938   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+28107   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+28175   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+28364   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+28449   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+28618   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+28686   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+28875   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+28943   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+29473   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+29541   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+29727   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+29811   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+29981   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+30049   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+30238   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+30306   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+30486   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+30554   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 20
+ Time Target Action  Run New Done       State Populations 
+31089   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+31172   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+31339   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+31407   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 20
+ Time Target Action  Run New Done       State Populations 
+31595   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+31663   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+31843   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+31911   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 20
+ Time Target Action  Run New Done       State Populations 
+32102   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+32170   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+32701   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+32769   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+32954   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+33022   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+33202   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+33270   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+33461   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+33545   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+33715   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+33783   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+34318   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+34386   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+34565   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+34633   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+34822   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+34905   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+35076   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+35144   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+35335   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+35403   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+35935   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+36003   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+36192   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+36275   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+36442   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+36510   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+36699   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+36782   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+36953   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+37021   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+37554   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+37635   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+37802   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+37870   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+38059   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+38127   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+38309   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+38377   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+38568   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+38636   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+39164   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+39232   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+39423   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+39506   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+39677   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+39745   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+39934   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+40017   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+40188   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+40256   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+40791   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+40859   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+41041   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+41109   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+41296   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+41364   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+41545   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+41613   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+41801   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+41885   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+42401   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+42469   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+42658   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+42741   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+42912   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+42980   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+43169   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+43253   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+43423   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+43491   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+44026   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+44107   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+44274   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+44342   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+44529   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+44612   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+44783   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+44851   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+45040   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+45123   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+45640   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+45708   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+45899   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+45982   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+46153   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+46221   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+46409   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+46493   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+46663   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+46731   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 30
+ Time Target Action  Run New Done       State Populations 
+47267   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+47335   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+47515   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+47583   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 30
+ Time Target Action  Run New Done       State Populations 
+47770   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+47854   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+48024   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+48092   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 30
+ Time Target Action  Run New Done       State Populations 
+48282   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+48365   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+48882   2   DISKREAD   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+48950   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+49139   3   DISKWRIT   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+49222   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+49393   4   DISKREAD   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+49461   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+49649   5   DISKWRIT   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+49732   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+49903   6   DISKREAD   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+49971   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+50506   2   DISKWRIT   2         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+50589   2    SUSPEND   2         READY  : 3 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+50760   3   DISKREAD   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+50828   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+51019   4   DISKWRIT   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+51104   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+51273   5   DISKREAD   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+51341   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+51547   6   DISKWRIT   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+51630   6    SUSPEND   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+51990   1     WAKEUP   6         READY  : 1 2 3 4 5
+                                 SUSPEND: 6
+ Time Target Action  Run New Done       State Populations 
+52261   1    DESTROY   1      1 READY  : 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+52430   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+52496   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+52683   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+52749   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+52931   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+52997   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+53184   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+53250   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+53434   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+53500   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+54031   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+54097   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+54281   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+54347   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+54530   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+54596   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+54780   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+54846   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+55033   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+55099   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+55627   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+55693   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+55878   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+55944   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+56128   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+56194   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+56381   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+56447   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+56631   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+56697   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+57229   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+57295   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+57479   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+57545   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+57732   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+57798   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+57982   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+58048   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+58233   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+58299   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+58829   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+58895   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+59080   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+59146   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+59330   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+59396   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+59585   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+59651   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+59835   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+59901   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+60432   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+60498   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+60682   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+60748   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+60933   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+60999   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+61183   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+61249   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+61436   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+61502   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+62032   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+62098   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+62285   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+62351   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+62535   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+62601   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+62785   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+62851   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+63035   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+63101   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 40
+ Time Target Action  Run New Done       State Populations 
+63632   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+63698   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+63882   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+63948   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 40
+ Time Target Action  Run New Done       State Populations 
+64133   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+64199   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+64383   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+64449   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 40
+ Time Target Action  Run New Done       State Populations 
+64636   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+64702   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+65232   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+65298   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+65483   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+65549   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+65733   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+65799   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+65986   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+66052   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+66236   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+66302   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+66834   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+66900   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+67084   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+67150   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+67336   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+67402   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+67586   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+67652   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+67839   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+67905   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+68435   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+68501   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+68685   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+68751   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+68935   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+69001   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+69184   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+69250   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+69434   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+69500   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+70033   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+70099   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+70283   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+70349   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+70534   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+70600   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+70784   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+70850   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+71033   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+71099   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+71629   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+71695   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+71881   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+71947   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+72131   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+72197   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+72384   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+72450   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+72632   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+72698   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+73229   2   DISKWRIT   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+73295   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+73479   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+73545   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+73730   4   DISKWRIT   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+73796   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+73980   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+74046   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+74234   6   DISKWRIT   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+74300   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+74830   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+74896   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+75081   3   DISKWRIT   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+75147   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+75331   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+75397   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+75586   5   DISKWRIT   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+75652   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+75836   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+75902   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+Reading back data: test 2c, PID 2.
+ Time Target Action  Run New Done       State Populations 
+76428   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+76494   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+76677   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+76743   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+Reading back data: test 2c, PID 4.
+ Time Target Action  Run New Done       State Populations 
+76927   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+76993   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+77174   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+77240   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+Reading back data: test 2c, PID 6.
+ Time Target Action  Run New Done       State Populations 
+77424   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+77490   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+78017   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+78083   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+Reading back data: test 2c, PID 3.
+ Time Target Action  Run New Done       State Populations 
+78266   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+78332   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+78514   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+78580   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+Reading back data: test 2c, PID 5.
+ Time Target Action  Run New Done       State Populations 
+78762   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+78828   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+79005   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+79071   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+79597   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+79663   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+79846   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+79912   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+80089   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+80155   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+80336   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+80402   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+80583   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+80649   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+81175   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+81241   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+81420   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+81486   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+81661   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+81727   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+81907   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+81973   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 10
+ Time Target Action  Run New Done       State Populations 
+82154   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+82220   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+82748   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+82814   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+82997   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+83063   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 10
+ Time Target Action  Run New Done       State Populations 
+83244   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+83310   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+83491   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+83557   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+83740   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+83806   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 10
+ Time Target Action  Run New Done       State Populations 
+84333   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+84399   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+84578   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+84644   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+84823   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+84889   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+85068   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+85134   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+85315   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+85381   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+85907   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+85973   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+86154   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+86220   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+86400   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+86466   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+86643   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+86709   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+86890   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+86956   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+87483   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+87549   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+87730   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+87796   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+87976   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+88042   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+88221   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+88287   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+88466   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+88532   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+89056   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+89122   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+89303   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+89369   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+89550   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+89616   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+89795   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+89861   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 20
+ Time Target Action  Run New Done       State Populations 
+90040   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+90106   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+90633   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+90699   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+90880   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+90946   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 20
+ Time Target Action  Run New Done       State Populations 
+91121   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+91187   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+91368   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+91434   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+91615   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+91681   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 20
+ Time Target Action  Run New Done       State Populations 
+92209   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+92275   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+92456   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+92522   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+92702   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+92768   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+92945   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+93011   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+93188   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+93254   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+93779   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+93845   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+94026   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+94092   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+94271   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+94337   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+94515   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+94581   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+94762   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+94828   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+95355   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+95421   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+95598   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+95664   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+95842   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+95908   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+96085   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+96151   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+96330   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+96396   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+96924   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+96990   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+97171   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+97237   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+97417   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+97483   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+97662   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+97728   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 30
+ Time Target Action  Run New Done       State Populations 
+97907   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+97973   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+98500   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+98566   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+98747   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+98813   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 30
+ Time Target Action  Run New Done       State Populations 
+98992   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+99058   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+99237   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+99303   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+99484   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+99550   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 30
+ Time Target Action  Run New Done       State Populations 
+   76   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+  142   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+  321   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+  387   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+  568   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+  634   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+  815   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+  881   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 1060   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 1126   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 1653   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 1719   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 1898   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 1964   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 2144   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 2210   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 2391   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 2457   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 2636   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 2702   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 3229   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 3295   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 3476   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 3542   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 3723   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 3789   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 3965   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 4031   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 4210   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 4276   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 4801   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 4867   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 5048   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 5114   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 5293   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 5359   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 5540   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 5606   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+PID= 6  disk_id =4, sector = 40
+ Time Target Action  Run New Done       State Populations 
+ 5789   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 5855   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 6381   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 6447   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 6631   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 6697   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+PID= 4  disk_id =3, sector = 40
+ Time Target Action  Run New Done       State Populations 
+ 6878   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 6944   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 7124   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 7190   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 7371   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 7437   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+PID= 2  disk_id =2, sector = 40
+ Time Target Action  Run New Done       State Populations 
+ 7962   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 8028   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 8209   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 8275   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 8454   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+ 8520   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 8699   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 8765   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 8946   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 9012   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 9538   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 9604   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 9785   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 9851   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+10031   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+10097   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+10280   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+10346   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+10526   6   DISKREAD   6         SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+10592   6    SUSPEND   6         SUSPEND: 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+11119   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+11185   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+11366   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+11432   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+11613   4   DISKREAD   4         READY  : 5 6
+                                 SUSPEND: 2 3
+ Time Target Action  Run New Done       State Populations 
+11679   4    SUSPEND   4         READY  : 5 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+11859   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+11925   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+12482   2   DISKREAD   2         READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+12548   2    SUSPEND   2         READY  : 3 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+12729   3   DISKREAD   3         READY  : 4 5 6
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+12795   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 2 3
+Test2c, PID 2, Ends at Time 113184
+ Time Target Action  Run New Done       State Populations 
+13248   2    DESTROY   2      2 READY  : 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+13416   3   DISKREAD   3         READY  : 4 5 6
+ Time Target Action  Run New Done       State Populations 
+13480   3    SUSPEND   3         READY  : 4 5 6
+                                 SUSPEND: 3
+Test2c, PID 4, Ends at Time 112930
+ Time Target Action  Run New Done       State Populations 
+13648   4    DESTROY   4      4 READY  : 5 6
+                                 SUSPEND: 3
+ Time Target Action  Run New Done       State Populations 
+13814   5   DISKREAD   5         READY  : 6
+                                 SUSPEND: 3
+ Time Target Action  Run New Done       State Populations 
+13876   5    SUSPEND   5         READY  : 6
+                                 SUSPEND: 3 5
+Test2c, PID 6, Ends at Time 112060
+ Time Target Action  Run New Done       State Populations 
+14046   6    DESTROY   6      6 SUSPEND: 3 5
+Test2c, PID 3, Ends at Time 114326
+ Time Target Action  Run New Done       State Populations 
+14390   3    DESTROY   3      3 READY  : 5
+Test2c, PID 5, Ends at Time 114508
+Hardware Statistics during the Simulation
+Disk  2: Disk Reads =    96: Disk Writes =    48: Disk Utilization =  0.126
+Disk  3: Disk Reads =    92: Disk Writes =    46: Disk Utilization =  0.120
+Disk  4: Disk Reads =    44: Disk Writes =    22: Disk Utilization =  0.058
+Context Switches =   373:  CALLS = 55400:  Masks =     0
+The Z502 halts execution and Ends at Time 114578
+Exiting the program

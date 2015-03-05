@@ -1,0 +1,101 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test1e
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+Release 3.60:Test 1e: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  659   2     CREATE   1   2      READY  : 2
+Program correctly returned success.
+Program correctly returned an error: 1
+Program correctly returned an error: 1
+ Time Target Action  Run New Done       State Populations 
+  817   2    SUSPEND   1         SUSPEND: 2
+Program correctly returned success.
+Program correctly returned an error: 1
+ Time Target Action  Run New Done       State Populations 
+  945   2     RESUME   1         READY  : 2
+Program correctly returned success.
+Program correctly returned an error: 1
+Program correctly returned an error: 1
+ Time Target Action  Run New Done       State Populations 
+ 1151   1    SUSPEND   1         READY  : 2
+                                 SUSPEND: 1
+Release 3.60:Test 1x: Pid 2
+ Time Target Action  Run New Done       State Populations 
+ 1365   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+ 1531   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+ 1793   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+ 1953   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+ 2215   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+ 2387   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+ 2649   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+75083   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+75345   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+75667   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+75929   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+76125   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+76387   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+76683   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+76945   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+77129   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+77391   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+77639   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+77901   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+78349   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+78611   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+78799   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+79061   2      SLEEP   2         WAITING: 2
+                                 SUSPEND: 1
+ Time Target Action  Run New Done       State Populations 
+79327   2     WAKEUP   2         READY  : 2
+                                 SUSPEND: 1
+Test1x, PID 2, Ends at Time 879492
+ Time Target Action  Run New Done       State Populations 
+79556   2    DESTROY   2      2 SUSPEND: 1

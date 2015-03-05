@@ -1,0 +1,19 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test1g
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+Release 3.60:Test 1g: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  659   2     CREATE   1   2      READY  : 2
+Program correctly returned success.
+Program correctly returned an error: 1
+Program correctly returned an error: 1
+ Time Target Action  Run New Done       State Populations 
+  819   2    DESTROY   1      2 
+Hardware Statistics during the Simulation
+Context Switches =     6:  CALLS =   404:  Masks =     0
+The Z502 halts execution and Ends at Time 885
+Exiting the program

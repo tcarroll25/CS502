@@ -1,0 +1,238 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test1i
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+Release 3.60:Test 1i: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  643   1    SWAPPED   1      1 
+ Time Target Action  Run New Done       State Populations 
+  757   2     CREATE   1   2      READY  : 2
+Send Message: sending message to id: 9999
+Send message: process doesn't exist id: 9999!
+Program correctly returned an error: 1
+Send Message: sending message to id: 2
+You need to pick a legal message length!
+Program correctly returned an error: 1
+Receive Message: trying to receive message from id: 9999
+Receive message: process doesn't exist id: 9999!
+Program correctly returned an error: 1
+Receive Message: trying to receive message from id: 2
+You need to pick a legal message length!
+Program correctly returned an error: 1
+Send Message: sending message to id: 1
+ Time Target Action  Run New Done       State Populations 
+  989   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Program correctly returned success.
+Receive Message: trying to receive message from id: 1
+ Time Target Action  Run New Done       State Populations 
+ 1123   1    RECVMSG   1         READY  : 2
+Transfer Message: id 1 is receiving message from id: 1
+Transfer Message: cant get message in outbox of receiver
+Receive Message: could not get last msg in inbox!
+Program correctly returned an error: 1
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 1270   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 1445   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 1648   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 1879   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 2138   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 2425   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 2740   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 3083   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 3454   1    SENDMSG   1         READY  : 2
+List:
+Messages for Proc: test1 ID: 1
+	Outbox:
+	DestID Length Message
+	1      64     a long but legal message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	2      64     message
+	Inbox:
+	RecvID Length Message
+Messages for Proc: test1i_a ID: 2
+	Outbox:
+	DestID Length Message
+	Inbox:
+	RecvID Length Message
+Send Message: sending message to id: 2
+ Time Target Action  Run New Done       State Populations 
+ 3853   1    SENDMSG   1         READY  : 2
+Send Message: proc with outbox doesnt exist or outbox full!
+A total of 10 messages were enqueued.
+ Time Target Action  Run New Done       State Populations 
+ 3960   2    DESTROY   1      2 
+Hardware Statistics during the Simulation
+Context Switches =    21:  CALLS =  1965:  Masks =     0
+The Z502 halts execution and Ends at Time 4026
+Exiting the program

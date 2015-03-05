@@ -1,0 +1,23 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test2a
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+Release 3.60:Test 2a: Pid 1
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   1                                                                
+VPN   0                                                                
+VPN   0                                                                
+VPN   2                                                                
+VPN   5                                                                
+VMR   7                                                                
+PID= 1  address= 412   written= 413   read= 413
+Hardware Statistics during the Simulation
+Faults =     1:  Context Switches =     5:  CALLS =   361:  Masks =     0
+The Z502 halts execution and Ends at Time 766
+Exiting the program

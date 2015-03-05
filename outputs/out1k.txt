@@ -1,0 +1,13 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test1k
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+Release 3.60:Test 1k: Pid 1
+ERROR - Already locked by this thread
+Hardware Statistics during the Simulation
+Faults =     1:  Context Switches =     3:  CALLS =   307:  Masks =     0
+The Z502 halts execution and Ends at Time 660
+Exiting the program

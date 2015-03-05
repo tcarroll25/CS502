@@ -1,0 +1,382 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test1c
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+This is Release 3.60:  Test 1c
+ Time Target Action  Run New Done       State Populations 
+  631   2     CREATE   1   2      READY  : 2
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  733   3     CREATE   1   3      READY  : 2 3
+ Time Target Action  Run New Done       State Populations 
+  837   4     CREATE   1   4      READY  : 2 3 4
+ Time Target Action  Run New Done       State Populations 
+  943   5     CREATE   1   5      READY  : 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 1051   6     CREATE   1   6      READY  : 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 1155   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+Release 3.60:Test 1x: Pid 2
+ Time Target Action  Run New Done       State Populations 
+ 1416   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 1669   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 1968   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+Release 3.60:Test 1x: Pid 3
+ Time Target Action  Run New Done       State Populations 
+ 2222   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 2 3
+ Time Target Action  Run New Done       State Populations 
+ 2378   1     WAKEUP   3         READY  : 1 2 4 5 6
+                                 WAITING: 3
+ Time Target Action  Run New Done       State Populations 
+ 2470   3     WAKEUP   3         READY  : 1 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 2716   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 2977   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 3259   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 3558   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 3783   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 2 3
+ Time Target Action  Run New Done       State Populations 
+ 3939   1     WAKEUP   3         READY  : 1 2 4 5 6
+                                 WAITING: 3
+ Time Target Action  Run New Done       State Populations 
+ 4031   3     WAKEUP   3         READY  : 1 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 4277   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 4538   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 4791   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 5090   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 5344   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 5434   1     WAKEUP   3         READY  : 1 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 5690   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 5951   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 6176   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 2 3
+ Time Target Action  Run New Done       State Populations 
+ 6334   3     WAKEUP   3         READY  : 2 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 6623   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 6876   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 6966   1     WAKEUP   3         READY  : 1 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 7222   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 7483   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 7737   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 8036   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 8261   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 2 3
+ Time Target Action  Run New Done       State Populations 
+ 8417   1     WAKEUP   3         READY  : 1 2 4 5 6
+                                 WAITING: 3
+ Time Target Action  Run New Done       State Populations 
+ 8509   3     WAKEUP   3         READY  : 1 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 8755   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 9016   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 9298   2     WAKEUP   3         READY  : 2 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+ 9597   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 9822   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 2 3
+ Time Target Action  Run New Done       State Populations 
+ 9978   1     WAKEUP   3         READY  : 1 2 4 5 6
+                                 WAITING: 3
+ Time Target Action  Run New Done       State Populations 
+10070   3     WAKEUP   3         READY  : 1 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+10316   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+Test1x, PID 2, Ends at Time 10480
+ Time Target Action  Run New Done       State Populations 
+10544   2    DESTROY   2      2 READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+10766   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 3
+Release 3.60:Test 1x: Pid 4
+ Time Target Action  Run New Done       State Populations 
+11046   3     WAKEUP   4         READY  : 3 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+11343   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 3
+ Time Target Action  Run New Done       State Populations 
+11514   3     WAKEUP   3         READY  : 1 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+11758   1      SLEEP   1         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+12017   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 3
+ Time Target Action  Run New Done       State Populations 
+12240   4      SLEEP   4         READY  : 5 6
+                                 WAITING: 1 3 4
+ Time Target Action  Run New Done       State Populations 
+12396   4     WAKEUP   4         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+12683   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 3
+ Time Target Action  Run New Done       State Populations 
+12932   1     WAKEUP   4         READY  : 1 5 6
+                                 WAITING: 3
+ Time Target Action  Run New Done       State Populations 
+13020   3     WAKEUP   4         READY  : 1 3 5 6
+ Time Target Action  Run New Done       State Populations 
+13274   1      SLEEP   1         READY  : 3 4 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+13533   3      SLEEP   3         READY  : 4 5 6
+                                 WAITING: 1 3
+ Time Target Action  Run New Done       State Populations 
+13773   4      SLEEP   4         READY  : 5 6
+                                 WAITING: 1 3 4
+Test1x, PID 4, Ends at Time 15079
+ Time Target Action  Run New Done       State Populations 
+15143   4    DESTROY   4      4 READY  : 3 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+15363   3      SLEEP   3         READY  : 5 6
+                                 WAITING: 1 3
+Test1x, PID 3, Ends at Time 15594
+ Time Target Action  Run New Done       State Populations 
+15658   3    DESTROY   3      3 READY  : 1 5 6
+ Time Target Action  Run New Done       State Populations 
+15852   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+Release 3.60:Test 1x: Pid 5
+ Time Target Action  Run New Done       State Populations 
+16107   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+Release 3.60:Test 1x: Pid 6
+ Time Target Action  Run New Done       State Populations 
+16395   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+Nothing needed to wake up yet, continuing...
+ Time Target Action  Run New Done       State Populations 
+16739   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+16956   6      SLEEP   6         WAITING: 1 5 6
+ Time Target Action  Run New Done       State Populations 
+17106   5     WAKEUP   6         READY  : 1 5
+                                 WAITING: 6
+ Time Target Action  Run New Done       State Populations 
+17192   6     WAKEUP   6         READY  : 1 5 6
+ Time Target Action  Run New Done       State Populations 
+17432   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+17687   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+17934   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+18227   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+18475   6      SLEEP   6         WAITING: 1 5 6
+ Time Target Action  Run New Done       State Populations 
+18625   1     WAKEUP   6         READY  : 1 5
+                                 WAITING: 6
+ Time Target Action  Run New Done       State Populations 
+18711   6     WAKEUP   6         READY  : 1 5 6
+ Time Target Action  Run New Done       State Populations 
+18951   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+19206   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+19453   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+19746   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+19994   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+20078   1     WAKEUP   6         READY  : 1 5
+ Time Target Action  Run New Done       State Populations 
+20328   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+20583   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+20802   6      SLEEP   6         WAITING: 1 5 6
+ Time Target Action  Run New Done       State Populations 
+20954   6     WAKEUP   6         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+21237   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+21484   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+21568   1     WAKEUP   6         READY  : 1 5
+ Time Target Action  Run New Done       State Populations 
+21818   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+22073   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+22321   6      SLEEP   6         WAITING: 1 5 6
+ Time Target Action  Run New Done       State Populations 
+22473   6     WAKEUP   6         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+22756   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+23003   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+23087   1     WAKEUP   6         READY  : 1 5
+ Time Target Action  Run New Done       State Populations 
+23337   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+23592   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+23840   5     WAKEUP   6         READY  : 5
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+24133   5      SLEEP   5         READY  : 6
+                                 WAITING: 1 5
+ Time Target Action  Run New Done       State Populations 
+24352   6      SLEEP   6         WAITING: 1 5 6
+ Time Target Action  Run New Done       State Populations 
+24502   1     WAKEUP   6         READY  : 1 5
+                                 WAITING: 6
+ Time Target Action  Run New Done       State Populations 
+24588   6     WAKEUP   6         READY  : 1 5 6
+ Time Target Action  Run New Done       State Populations 
+24828   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+Test1x, PID 5, Ends at Time 24986
+ Time Target Action  Run New Done       State Populations 
+25050   5    DESTROY   5      5 READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+25266   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+25490   6     WAKEUP   6         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+25771   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+25969   1     WAKEUP   6         READY  : 1
+                                 WAITING: 6
+ Time Target Action  Run New Done       State Populations 
+26053   6     WAKEUP   6         READY  : 1 6
+ Time Target Action  Run New Done       State Populations 
+26291   1      SLEEP   1         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+26544   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+46956   6     WAKEUP   6         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+47040   1     WAKEUP   6         READY  : 1 6
+ Time Target Action  Run New Done       State Populations 
+47278   1      SLEEP   1         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+47531   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+47695   6     WAKEUP   6         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+47976   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+48254   6     WAKEUP   6         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+48523   1     WAKEUP   6         READY  : 1
+ Time Target Action  Run New Done       State Populations 
+48771   1      SLEEP   1         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+48996   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+49166   6     WAKEUP   6         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+49447   6      SLEEP   6         WAITING: 1 6
+ Time Target Action  Run New Done       State Populations 
+49707   6     WAKEUP   6         READY  : 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+49976   1     WAKEUP   6         READY  : 1
+ Time Target Action  Run New Done       State Populations 
+50224   1      SLEEP   1         READY  : 6
+                                 WAITING: 1
+Test1x, PID 6, Ends at Time 2349908
+ Time Target Action  Run New Done       State Populations 
+50416   6    DESTROY   6      6 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+51365   1     WAKEUP   6         READY  : 1
+Hardware Statistics during the Simulation
+Context Switches =   237:  CALLS = 1175089:  Masks =     0
+The Z502 halts execution and Ends at Time 2351609
+Exiting the program

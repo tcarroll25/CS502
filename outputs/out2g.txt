@@ -1,0 +1,594 @@
+This is Simulation Version 3.60 and Hardware Version 3.60.
+
+os_switch_context_complete  called before user code.
+Program called with 2 arguments: ./os test2g
+Calling with argument 'sample' executes the sample program.
+ Time Target Action  Run New Done       State Populations 
+  474   1     CREATE   0   1      READY  : 1
+
+
+Release 3.60:Test 2g: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  643   1    SWAPPED   1      1 
+ Time Target Action  Run New Done       State Populations 
+  757   2     CREATE   1   2      READY  : 2
+ Time Target Action  Run New Done       State Populations 
+  859   3     CREATE   1   3      READY  : 2 3
+ Time Target Action  Run New Done       State Populations 
+  963   4     CREATE   1   4      READY  : 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 1069   5     CREATE   1   5      READY  : 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 1177   6     CREATE   1   6      READY  : 2 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+ 1313   1      SLEEP   1         READY  : 2 3 4 5 6
+                                 WAITING: 1
+
+
+Release 3.60:Test 2gx: Pid 2
+**********Frame Table*********
+Frame  Time  TAG                 (ID  PG  )  
+0      1789  almost_done!!       (2   2   ) 
+1      1829  almost_done!!       (2   3   ) 
+2      1869  almost_done!!       (2   4   ) 
+3      1909  almost_done!!       (2   5   ) 
+4      1949  almost_done!!       (2   6   ) 
+5      1989  almost_done!!       (2   7   ) 
+6      2029  almost_done!!       (2   8   ) 
+7      2069  almost_done!!       (2   9   ) 
+8      2109  almost_done!!       (2   10  ) 
+9      2149  almost_done!!       (2   11  ) 
+10     2189  almost_done!!       (2   12  ) 
+11     0                         
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 2351   2      SLEEP   2         READY  : 3 4 5 6
+                                 WAITING: 1 2
+
+
+Release 3.60:Test 2gx: Pid 3
+**********Frame Table*********
+Frame  Time  TAG                 (ID  PG  )  
+0      2577  almost_done!!       (2   2   ) (3   3   ) 
+1      2617  almost_done!!       (2   3   ) (3   4   ) 
+2      2657  almost_done!!       (2   4   ) (3   5   ) 
+3      2697  almost_done!!       (2   5   ) (3   6   ) 
+4      2737  almost_done!!       (2   6   ) (3   7   ) 
+5      2777  almost_done!!       (2   7   ) (3   8   ) 
+6      2817  almost_done!!       (2   8   ) (3   9   ) 
+7      2857  almost_done!!       (2   9   ) (3   10  ) 
+8      2897  almost_done!!       (2   10  ) (3   11  ) 
+9      2937  almost_done!!       (2   11  ) (3   12  ) 
+10     2977  almost_done!!       (2   12  ) (3   13  ) 
+11     0                         
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 3106   3    RECVMSG   3         READY  : 4 5 6
+                                 WAITING: 1 2
+ Time Target Action  Run New Done       State Populations 
+ 3216   3    SUSPEND   3         READY  : 4 5 6
+                                 WAITING: 1 2
+                                 SUSPEND: 3
+
+
+Release 3.60:Test 2gx: Pid 4
+**********Frame Table*********
+Frame  Time  TAG                 (ID  PG  )  
+0      3413  almost_done!!       (2   2   ) (3   3   ) (4   4   ) 
+1      3453  almost_done!!       (2   3   ) (3   4   ) (4   5   ) 
+2      3493  almost_done!!       (2   4   ) (3   5   ) (4   6   ) 
+3      3533  almost_done!!       (2   5   ) (3   6   ) (4   7   ) 
+4      3573  almost_done!!       (2   6   ) (3   7   ) (4   8   ) 
+5      3613  almost_done!!       (2   7   ) (3   8   ) (4   9   ) 
+6      3653  almost_done!!       (2   8   ) (3   9   ) (4   10  ) 
+7      3693  almost_done!!       (2   9   ) (3   10  ) (4   11  ) 
+8      3733  almost_done!!       (2   10  ) (3   11  ) (4   12  ) 
+9      3773  almost_done!!       (2   11  ) (3   12  ) (4   13  ) 
+10     3813  almost_done!!       (2   12  ) (3   13  ) (4   14  ) 
+11     0                         
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 3942   4    RECVMSG   4         READY  : 5 6
+                                 WAITING: 1 2
+                                 SUSPEND: 3
+ Time Target Action  Run New Done       State Populations 
+ 4052   4    SUSPEND   4         READY  : 5 6
+                                 WAITING: 1 2
+                                 SUSPEND: 3 4
+
+
+Release 3.60:Test 2gx: Pid 5
+**********Frame Table*********
+Frame  Time  TAG                 (ID  PG  )  
+0      4249  almost_done!!       (2   2   ) (3   3   ) (4   4   ) (5   5   ) 
+1      4289  almost_done!!       (2   3   ) (3   4   ) (4   5   ) (5   6   ) 
+2      4329  almost_done!!       (2   4   ) (3   5   ) (4   6   ) (5   7   ) 
+3      4369  almost_done!!       (2   5   ) (3   6   ) (4   7   ) (5   8   ) 
+4      4409  almost_done!!       (2   6   ) (3   7   ) (4   8   ) (5   9   ) 
+5      4449  almost_done!!       (2   7   ) (3   8   ) (4   9   ) (5   10  ) 
+6      4489  almost_done!!       (2   8   ) (3   9   ) (4   10  ) (5   11  ) 
+7      4529  almost_done!!       (2   9   ) (3   10  ) (4   11  ) (5   12  ) 
+8      4569  almost_done!!       (2   10  ) (3   11  ) (4   12  ) (5   13  ) 
+9      4609  almost_done!!       (2   11  ) (3   12  ) (4   13  ) (5   14  ) 
+10     4649  almost_done!!       (2   12  ) (3   13  ) (4   14  ) (5   15  ) 
+11     0                         
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 4778   5    RECVMSG   5         READY  : 6
+                                 WAITING: 1 2
+                                 SUSPEND: 3 4
+ Time Target Action  Run New Done       State Populations 
+ 4888   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1 2
+                                 SUSPEND: 3 4 5
+
+
+Release 3.60:Test 2gx: Pid 6
+**********Frame Table*********
+Frame  Time  TAG                 (ID  PG  )  
+0      5085  almost_done!!       (2   2   ) (3   3   ) (4   4   ) (5   5   ) (6   6   ) 
+1      5125  almost_done!!       (2   3   ) (3   4   ) (4   5   ) (5   6   ) (6   7   ) 
+2      5165  almost_done!!       (2   4   ) (3   5   ) (4   6   ) (5   7   ) (6   8   ) 
+3      5205  almost_done!!       (2   5   ) (3   6   ) (4   7   ) (5   8   ) (6   9   ) 
+4      5245  almost_done!!       (2   6   ) (3   7   ) (4   8   ) (5   9   ) (6   10  ) 
+5      5285  almost_done!!       (2   7   ) (3   8   ) (4   9   ) (5   10  ) (6   11  ) 
+6      5325  almost_done!!       (2   8   ) (3   9   ) (4   10  ) (5   11  ) (6   12  ) 
+7      5365  almost_done!!       (2   9   ) (3   10  ) (4   11  ) (5   12  ) (6   13  ) 
+8      5405  almost_done!!       (2   10  ) (3   11  ) (4   12  ) (5   13  ) (6   14  ) 
+9      5445  almost_done!!       (2   11  ) (3   12  ) (4   13  ) (5   14  ) (6   15  ) 
+10     5485  almost_done!!       (2   12  ) (3   13  ) (4   14  ) (5   15  ) (6   16  ) 
+11     0                         
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 5614   6    RECVMSG   6         WAITING: 1 2
+                                 SUSPEND: 3 4 5
+ Time Target Action  Run New Done       State Populations 
+ 5724   6    SUSPEND   6         WAITING: 1 2
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+11463   1     WAKEUP   6         READY  : 1
+                                 WAITING: 2
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+11739   1      SLEEP   1         WAITING: 1 2
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+12526   2     WAKEUP   1         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5 6
+Sender 2 to Receiver 3 passing data 0
+ Time Target Action  Run New Done       State Populations 
+12841   2    SENDMSG   2         WAITING: 1
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+13094   2    RECVMSG   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 4 5 6
+ Time Target Action  Run New Done       State Populations 
+13204   2    SUSPEND   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 2 4 5 6
+Program correctly returned success.
+			Receiver 3 from Sender 2 got data 0
+Sender 3 to Receiver 4 passing data 1
+ Time Target Action  Run New Done       State Populations 
+13537   3    SENDMSG   3         WAITING: 1
+                                 SUSPEND: 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+13790   3    RECVMSG   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 5 6
+ Time Target Action  Run New Done       State Populations 
+13900   3    SUSPEND   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 3 5 6
+Program correctly returned success.
+			Receiver 4 from Sender 3 got data 1
+Sender 4 to Receiver 5 passing data 2
+ Time Target Action  Run New Done       State Populations 
+14233   4    SENDMSG   4         WAITING: 1
+                                 SUSPEND: 2 3 5 6
+ Time Target Action  Run New Done       State Populations 
+14486   4    RECVMSG   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 6
+ Time Target Action  Run New Done       State Populations 
+14596   4    SUSPEND   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 6
+Program correctly returned success.
+			Receiver 5 from Sender 4 got data 2
+Sender 5 to Receiver 6 passing data 3
+ Time Target Action  Run New Done       State Populations 
+14929   5    SENDMSG   5         WAITING: 1
+                                 SUSPEND: 2 3 4 6
+ Time Target Action  Run New Done       State Populations 
+15182   5    RECVMSG   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+15292   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+Program correctly returned success.
+			Receiver 6 from Sender 5 got data 3
+Sender 6 to Receiver 2 passing data 4
+ Time Target Action  Run New Done       State Populations 
+15625   6    SENDMSG   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+15878   6    RECVMSG   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5
+ Time Target Action  Run New Done       State Populations 
+15988   6    SUSPEND   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5 6
+Program correctly returned success.
+			Receiver 2 from Sender 6 got data 4
+Sender 2 to Receiver 3 passing data 5
+ Time Target Action  Run New Done       State Populations 
+16321   2    SENDMSG   2         WAITING: 1
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+16574   2    RECVMSG   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 4 5 6
+ Time Target Action  Run New Done       State Populations 
+16684   2    SUSPEND   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 2 4 5 6
+Program correctly returned success.
+			Receiver 3 from Sender 2 got data 5
+Sender 3 to Receiver 4 passing data 6
+ Time Target Action  Run New Done       State Populations 
+17017   3    SENDMSG   3         WAITING: 1
+                                 SUSPEND: 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+17270   3    RECVMSG   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 5 6
+ Time Target Action  Run New Done       State Populations 
+17380   3    SUSPEND   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 3 5 6
+Program correctly returned success.
+			Receiver 4 from Sender 3 got data 6
+Sender 4 to Receiver 5 passing data 7
+ Time Target Action  Run New Done       State Populations 
+17713   4    SENDMSG   4         WAITING: 1
+                                 SUSPEND: 2 3 5 6
+ Time Target Action  Run New Done       State Populations 
+17966   4    RECVMSG   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 6
+ Time Target Action  Run New Done       State Populations 
+18076   4    SUSPEND   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 6
+Program correctly returned success.
+			Receiver 5 from Sender 4 got data 7
+Sender 5 to Receiver 6 passing data 8
+ Time Target Action  Run New Done       State Populations 
+18409   5    SENDMSG   5         WAITING: 1
+                                 SUSPEND: 2 3 4 6
+ Time Target Action  Run New Done       State Populations 
+18662   5    RECVMSG   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+18772   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+Program correctly returned success.
+			Receiver 6 from Sender 5 got data 8
+Sender 6 to Receiver 2 passing data 9
+ Time Target Action  Run New Done       State Populations 
+19105   6    SENDMSG   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+19358   6    RECVMSG   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5
+ Time Target Action  Run New Done       State Populations 
+19468   6    SUSPEND   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5 6
+Program correctly returned success.
+			Receiver 2 from Sender 6 got data 9
+Sender 2 to Receiver 3 passing data 10
+ Time Target Action  Run New Done       State Populations 
+19801   2    SENDMSG   2         WAITING: 1
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+20054   2    RECVMSG   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 4 5 6
+ Time Target Action  Run New Done       State Populations 
+20164   2    SUSPEND   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 2 4 5 6
+Program correctly returned success.
+			Receiver 3 from Sender 2 got data 10
+Sender 3 to Receiver 4 passing data 11
+ Time Target Action  Run New Done       State Populations 
+20497   3    SENDMSG   3         WAITING: 1
+                                 SUSPEND: 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+20750   3    RECVMSG   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 5 6
+ Time Target Action  Run New Done       State Populations 
+20860   3    SUSPEND   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 3 5 6
+Program correctly returned success.
+			Receiver 4 from Sender 3 got data 11
+Sender 4 to Receiver 5 passing data 12
+ Time Target Action  Run New Done       State Populations 
+21193   4    SENDMSG   4         WAITING: 1
+                                 SUSPEND: 2 3 5 6
+ Time Target Action  Run New Done       State Populations 
+21446   4    RECVMSG   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 6
+ Time Target Action  Run New Done       State Populations 
+21556   4    SUSPEND   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 6
+Program correctly returned success.
+			Receiver 5 from Sender 4 got data 12
+Sender 5 to Receiver 6 passing data 13
+ Time Target Action  Run New Done       State Populations 
+21898   5    SENDMSG   5         WAITING: 1
+                                 SUSPEND: 2 3 4 6
+ Time Target Action  Run New Done       State Populations 
+22184   1     WAKEUP   5         READY  : 1 6
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+22439   1      SLEEP   1         READY  : 5 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+22610   5    RECVMSG   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+22720   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+Program correctly returned success.
+			Receiver 6 from Sender 5 got data 13
+Sender 6 to Receiver 2 passing data 14
+ Time Target Action  Run New Done       State Populations 
+23053   6    SENDMSG   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+23306   6    RECVMSG   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5
+ Time Target Action  Run New Done       State Populations 
+23416   6    SUSPEND   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5 6
+Program correctly returned success.
+			Receiver 2 from Sender 6 got data 14
+Sender 2 to Receiver 3 passing data 15
+ Time Target Action  Run New Done       State Populations 
+23749   2    SENDMSG   2         WAITING: 1
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+24002   2    RECVMSG   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 4 5 6
+ Time Target Action  Run New Done       State Populations 
+24112   2    SUSPEND   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 2 4 5 6
+Program correctly returned success.
+			Receiver 3 from Sender 2 got data 15
+Sender 3 to Receiver 4 passing data 16
+ Time Target Action  Run New Done       State Populations 
+24445   3    SENDMSG   3         WAITING: 1
+                                 SUSPEND: 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+24698   3    RECVMSG   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 5 6
+ Time Target Action  Run New Done       State Populations 
+24808   3    SUSPEND   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 3 5 6
+Program correctly returned success.
+			Receiver 4 from Sender 3 got data 16
+Sender 4 to Receiver 5 passing data 17
+ Time Target Action  Run New Done       State Populations 
+25141   4    SENDMSG   4         WAITING: 1
+                                 SUSPEND: 2 3 5 6
+ Time Target Action  Run New Done       State Populations 
+25394   4    RECVMSG   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 6
+ Time Target Action  Run New Done       State Populations 
+25504   4    SUSPEND   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 6
+Program correctly returned success.
+			Receiver 5 from Sender 4 got data 17
+Sender 5 to Receiver 6 passing data 18
+ Time Target Action  Run New Done       State Populations 
+25837   5    SENDMSG   5         WAITING: 1
+                                 SUSPEND: 2 3 4 6
+ Time Target Action  Run New Done       State Populations 
+26090   5    RECVMSG   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+26200   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+Program correctly returned success.
+			Receiver 6 from Sender 5 got data 18
+Sender 6 to Receiver 2 passing data 19
+ Time Target Action  Run New Done       State Populations 
+26533   6    SENDMSG   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+26786   6    RECVMSG   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5
+ Time Target Action  Run New Done       State Populations 
+26896   6    SUSPEND   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5 6
+Program correctly returned success.
+			Receiver 2 from Sender 6 got data 19
+Sender 2 to Receiver 3 passing data 20
+ Time Target Action  Run New Done       State Populations 
+27229   2    SENDMSG   2         WAITING: 1
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+27482   2    RECVMSG   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 4 5 6
+ Time Target Action  Run New Done       State Populations 
+27592   2    SUSPEND   2         READY  : 3
+                                 WAITING: 1
+                                 SUSPEND: 2 4 5 6
+Program correctly returned success.
+			Receiver 3 from Sender 2 got data 20
+Sender 3 to Receiver 4 passing data 21
+ Time Target Action  Run New Done       State Populations 
+27925   3    SENDMSG   3         WAITING: 1
+                                 SUSPEND: 2 4 5 6
+ Time Target Action  Run New Done       State Populations 
+28178   3    RECVMSG   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 5 6
+ Time Target Action  Run New Done       State Populations 
+28288   3    SUSPEND   3         READY  : 4
+                                 WAITING: 1
+                                 SUSPEND: 2 3 5 6
+Program correctly returned success.
+			Receiver 4 from Sender 3 got data 21
+Sender 4 to Receiver 5 passing data 22
+ Time Target Action  Run New Done       State Populations 
+28621   4    SENDMSG   4         WAITING: 1
+                                 SUSPEND: 2 3 5 6
+ Time Target Action  Run New Done       State Populations 
+28874   4    RECVMSG   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 6
+ Time Target Action  Run New Done       State Populations 
+28984   4    SUSPEND   4         READY  : 5
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 6
+Program correctly returned success.
+			Receiver 5 from Sender 4 got data 22
+Sender 5 to Receiver 6 passing data 23
+ Time Target Action  Run New Done       State Populations 
+29317   5    SENDMSG   5         WAITING: 1
+                                 SUSPEND: 2 3 4 6
+ Time Target Action  Run New Done       State Populations 
+29570   5    RECVMSG   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+29680   5    SUSPEND   5         READY  : 6
+                                 WAITING: 1
+                                 SUSPEND: 2 3 4 5
+Program correctly returned success.
+			Receiver 6 from Sender 5 got data 23
+Sender 6 to Receiver 2 passing data 24
+ Time Target Action  Run New Done       State Populations 
+30013   6    SENDMSG   6         WAITING: 1
+                                 SUSPEND: 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+30266   6    RECVMSG   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5
+ Time Target Action  Run New Done       State Populations 
+30376   6    SUSPEND   6         READY  : 2
+                                 WAITING: 1
+                                 SUSPEND: 3 4 5 6
+Program correctly returned success.
+			Receiver 2 from Sender 6 got data 24
+Sender 2 to Receiver 3 passing data 25
+ Time Target Action  Run New Done       State Populations 
+30709   2    SENDMSG   2         WAITING: 1
+                                 SUSPEND: 3 4 5 6
+ Time Target Action  Run New Done       State Populations 
+30997   2      SLEEP   2         READY  : 3
+                                 WAITING: 1 2
+                                 SUSPEND: 4 5 6
+Program correctly returned success.
+			Receiver 3 from Sender 2 got data 25
+Sender 3 to Receiver 4 passing data 26
+ Time Target Action  Run New Done       State Populations 
+31359   3    SENDMSG   3         WAITING: 1 2
+                                 SUSPEND: 4 5 6
+ Time Target Action  Run New Done       State Populations 
+31643   3    DESTROY   3      3 READY  : 4
+                                 WAITING: 1 2
+                                 SUSPEND: 5 6
+Program correctly returned success.
+			Receiver 4 from Sender 3 got data 26
+Sender 4 to Receiver 5 passing data 27
+ Time Target Action  Run New Done       State Populations 
+31964   4    SENDMSG   4         WAITING: 1 2
+                                 SUSPEND: 5 6
+ Time Target Action  Run New Done       State Populations 
+32246   4    DESTROY   4      4 READY  : 5
+                                 WAITING: 1 2
+                                 SUSPEND: 6
+Program correctly returned success.
+			Receiver 5 from Sender 4 got data 27
+Sender 5 to Receiver 6 passing data 28
+ Time Target Action  Run New Done       State Populations 
+32569   5    SENDMSG   5         WAITING: 1 2
+                                 SUSPEND: 6
+ Time Target Action  Run New Done       State Populations 
+36076   1     WAKEUP   5         READY  : 1 6
+                                 WAITING: 2
+ Time Target Action  Run New Done       State Populations 
+36162   2     WAKEUP   5         READY  : 1 2 6
+ Time Target Action  Run New Done       State Populations 
+36413   1      SLEEP   1         READY  : 2 5 6
+                                 WAITING: 1
+Overview of shared area at completion of Test2g
+number_2gx_processes = 5
+Mailbox info for index 0:
+			1234   2   24   6
+Mailbox info for index 1:
+			1234   3   25   2
+Mailbox info for index 2:
+			1234   4   26   3
+Mailbox info for index 3:
+			1234   5   27   4
+Mailbox info for index 4:
+			1234   6   28   5
+Mailbox info for index 5:
+			1532647768   1600019804   1667391840   1734763876
+Mailbox info for index 6:
+			1802135912   1869507948   1936879984   2004252020
+Mailbox info for index 7:
+			2071624056   2138996092   2206368128   2273740164
+Mailbox info for index 8:
+			-1953855096   2408484236   2475856272   2543228308
+ Time Target Action  Run New Done       State Populations 
+37137   2    DESTROY   2      2 READY  : 5 6
+                                 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+37296   5    DESTROY   5      5 READY  : 6
+                                 WAITING: 1
+Program correctly returned success.
+			Receiver 6 from Sender 5 got data 28
+Sender 6 to Receiver 2 passing data 29
+ Time Target Action  Run New Done       State Populations 
+37657   6    DESTROY   6      6 WAITING: 1
+ Time Target Action  Run New Done       State Populations 
+46576   1     WAKEUP   6         READY  : 1
+Hardware Statistics during the Simulation
+Context Switches =   511:  CALLS = 23496:  Masks =     0
+The Z502 halts execution and Ends at Time 46820
+Exiting the program
